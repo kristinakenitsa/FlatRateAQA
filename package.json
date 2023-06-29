@@ -1,0 +1,22 @@
+{
+    "name": "puppeter",
+    "version": "1.0.0",
+    "description": "automation practical tests",
+    "main": "index.js",
+    "author": "Kristina Kenitsa",
+
+    "scripts": {
+        "tests": "node ./node_modules/mocha/bin/mocha --timeout 30000 ./tests",
+        "test:order": "node ./node_modules/mocha/bin/mocha --timeout 30000 ./tests/order-ticket.js",
+        "test:verification": "node ./node_modules/mocha/bin/mocha --timeout 30000 ./tests/verify-sections.js"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.5",
+        "puppeteer": "20.7.3"
+    },
+    "dependencies": {
+        "chai": "^4.3.7",
+        "mocha": "^10.2.0",
+        "prettier": "^2.8.8"
+    }
+}
